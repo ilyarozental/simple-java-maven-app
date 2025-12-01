@@ -61,6 +61,6 @@ jobs:
         build-args: |
           APP_VERSION=${{ steps.version.outputs.version }}
         tags: |
-         ${{ vars.DOCKERHUB_USERNAME }}/simple-java-maven-app:${{ steps.version.outputs.version }}
-         ${{ vars.DOCKERHUB_USERNAME }}/simple-java-maven-app:latest
+         ${{ secrets.DOCKERHUB_USERNAME }}/simple-java-maven-app:${{ steps.version.outputs.version }}
+         ${{ secrets.DOCKERHUB_USERNAME }}/simple-java-maven-app:latest
           
